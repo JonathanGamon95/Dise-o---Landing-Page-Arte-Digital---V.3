@@ -1,0 +1,90 @@
+/* FONTS */
+body {
+    color: aliceblue;
+    font-family: sans-serif;
+    /* background-color: #0b0b0b; */
+}
+
+.TITTLE,
+.SUB_TITTLE {
+    color: #ff6dce;
+}
+
+.TITTLE {
+    font-weight: 800;
+}
+
+.SUB_TITTLE {
+    font-weight: 600;
+}
+
+
+
+
+
+
+/*-- BUTTONS --*/
+.NAV-BUTTON,
+.HOME_SECTION button,
+.SERVICES-SECTION button,
+.ABOUT-SECTION button,
+.CONTACT-SECTION button {
+    cursor: pointer;
+}
+
+.HOME_SECTION button,
+.SERVICES-SECTION button,
+.ABOUT-SECTION button {
+    width: 100px;
+}
+
+.SERVICES-SECTION button,
+.ABOUT-SECTION button {
+    background-color: aliceblue;
+    color: black;
+}
+
+.NAV-BUTTON:hover {
+    color: rgb(203, 216, 228);
+}
+
+
+
+
+
+/*-- ICONS --*/
+.ICON-SOCIAL-NETWORKS li,
+.ICON_WHATSAPP {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.ICON-SOCIAL-NETWORKS li:hover,
+.ICON_WHATSAPP:hover {
+    transform: scale(1.2);
+}
+
+.FLAGS {
+    width: 30px;
+    height: auto;
+}
+
+
+
+
+/* CONTAINER BACKGROUND */
+.CONTAINER-EXT {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+    color: aliceblue;
+}
+
+
+/* FORM */
+.CONTACT-FORM {
+    background-color: #222222;
+}
+
+.CONTACT-FORM input,
+.CONTACT-FORM textarea {
+    background-color: #2C2C2C;
+}

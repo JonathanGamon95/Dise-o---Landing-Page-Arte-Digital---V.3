@@ -1,0 +1,60 @@
+/* animacion flotante */
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.BOX_WORKS {
+    animation: flotar 2s ease-in-out infinite;
+}
+
+
+
+
+/* animacion de imagen y texto HOME-SECTION */
+@keyframes slideFadeOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideFadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.IMG_HOME,
+.IMG_HOME_TEXT {
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-out {
+    animation: slideFadeOutLeft 1s forwards;
+}
+
+.fade-in {
+    animation: slideFadeInRight 1s forwards;
+}

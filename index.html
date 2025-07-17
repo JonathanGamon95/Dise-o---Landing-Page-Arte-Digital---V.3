@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon page -->
+    <link rel="icon" href="./src/assets/imagens/sections/home/logo/ba7c3352960ba4112e10e7e9b4998c19.png">
+    <!-- icon librery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- css local-->
+    <link rel="stylesheet" href="./src/styles/general-styles.css">
+    <link rel="stylesheet" href="./src/styles/background-animation.css">
+    <link rel="stylesheet" href="./src/styles/menu-mobile.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
+    <title>ArteDigital.com</title>
+</head>
+
+<body>
+    <!-- Propiedad de Jonathan Gamon - Todos los derechos reservados - si te gusto la estructura y organizacion semantica podes comunicarte con migo -->
+
+    <!-- HEADER -->
+    <header class="w-full sm:flex">
+        <div class="MENU
+        w-full sm:w-lg
+        flex justify-between
+        mt-0 mb-4 sm:mt-4 sm:mb-10 ml-auto mr-auto p-4
+        bg-[#1b1b1b] sm:rounded-2xl">
+            <!-- <h1 class="flex items-center"><span class="text-[#e74c3c]">Arte</span>Digital</h1> -->
+            <img class="w-[50px] h-[40px] object-contain my-auto" src="./src/assets/imagens/sections/home/logo/ba7c3352960ba4112e10e7e9b4998c19.png" alt="logo">
+            
+            <nav id="NAV_BUTTON_CONTAINER" class="hidden sm:flex gap-4">
+                <button id="NAV_HOME" class="NAV-BUTTON text-sm sm:text-lg"         onclick="changeOfSection(HOME_SECTION)">Inicio</button>
+                <button id="NAV_SERVICIE" class="NAV-BUTTON text-sm sm:text-lg"     onclick="changeOfSection(SERVICES_SECTION)">Servicios</button>
+                <button id="NAV_ABOUT" class="NAV-BUTTON text-sm sm:text-lg"        onclick="changeOfSection(ABOUT_SECTION)">Nosotros</button>
+                <button id="NAV_CONTACT" class="NAV-BUTTON text-sm sm:text-lg"      onclick="changeOfSection(CONTACT_SECTION)">Contactos</button>
+            </nav>
+
+
+            <!-- MENU MOBILE -->
+            <button id="menu-toggle" class="menu-toggle sm:hidden text-2xl">=</button>
+
+            <nav id="menu" class="menu sm:hidden">
+                <button onclick="changeOfSection(HOME_SECTION); toggleMenu()">Inicio</button>
+                <button onclick="changeOfSection(SERVICES_SECTION); toggleMenu()">Servicios</button>
+                <button onclick="changeOfSection(ABOUT_SECTION); toggleMenu()">Nosotros</button>
+                <button onclick="changeOfSection(CONTACT_SECTION); toggleMenu()">Contacto</button>
+                <button><a href="https://api.whatsapp.com/" target="_blank" class="ICON_WHATSAPP"><i class="bi bi-whatsapp text-xl"></i></a></button>
+            </nav>
+
+            <a href="https://api.whatsapp.com/" target="_blank" class="ICON_WHATSAPP flex items-center hidden sm:block my-auto"><i class="bi bi-whatsapp text-xl"></i></a>
+        </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="CONTAINER-EXT
+    w-screen sm:max-w-[1100px] sm:h-[700px] sm:min-h[700px] m-auto p-4 sm:p-8 sm:rounded-2xl">
+        <section id="CONTAINER_INT" class="CONTAINER-INT w-full h-full
+        opacity-100 transition-opacity duration-500 ease-in-out">
+
+
+            <div id="HOME_SECTION" class="HOME_SECTION w-full h-full
+            grid grid-cols-1 grid-rows-[1fr_auto] sm:grid-cols-2 sm:grid-rows-1 gap-4">
+                <div class="relative">
+                    <br class="hidden md:block">
+                    <br class="hidden md:block">
+                    <br>
+                    <div class="flex gap-2">
+                        <!-- <i class="bi bi-brush-fill text-4xl"></i> -->
+                        <h1 class="TITTLE text-3xl sm:text-4xl font-bold">Convierte tu creatividad en arte</h1>
+                    </div>
+                    <br>
+                    <p class="text-center sm:text-start text-xl">Explora el mundo del arte digital y descubre cómo
+                        podemos llevar tus ideas a un nuevo nivel, con diseños
+                        innovadores y experiencias visuales que cautivan.</p>
+                    <br>
+                    <br>
+                    <div class="flex justify-center sm:justify-start gap-2">
+                        <a href="./sign-in.html" target="_blank"><button class="BUTTON-HOME p-2 rounded-lg bg-[#1b1b1b]">Registrate</button></a>
+                        <a href="./login_in.html" target="_blank"><button class="BUTTON-HOME p-2 rounded-lg bg-[#3D74B6]">Iniciar</button></a>
+                    </div>
+                    <br>
+                    <h2 class="SUB_TITTLE text-center sm:text-start text-xl mb-2">Siguenos en nuestras Redes Sociales</h2>
+                    <ul class="ICON-SOCIAL-NETWORKS flex justify-center sm:justify-start gap-4">
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram text-2xl"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook text-2xl"></i></a></li>
+                        <li><a href=""><i class="bi bi-tiktok text-2xl"></i></a></li>
+                    </ul>
+                    <br>
+                    <div class="BOX_WORKS w-[300px] m-auto sm:m-0 p-2 bg-[aliceblue] rounded-lg">
+                        <p class="font-semibold text-[#1b1b1b]">+3.000 trabajos en paises como</p>
+                        <ul class="flex gap-2">
+                            <li class="FLAGS"><img class="w-full" src="./src/assets/imagens/sections/home/icon/arg.png" alt=""></li>
+                            <li class="FLAGS"><img src="./src/assets/imagens/sections/home/icon/bra.png" alt=""></li>
+                            <li class="FLAGS"><img src="./src/assets/imagens/sections/home/icon/uru.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h1 class="sm:absolute bottom-0 text-xl text-center sm:text-start">Jonathan Gamon - 2025</h1>
+                </div>
+
+
+                <div>
+                    <br class="hidden sm:block">
+                    <br class="hidden sm:block">
+                    <br class="hidden sm:block">
+                    <div class="w-full sm:h-[500px] grid grid-cols-1 grid-rows-8 overflow-hidden">
+                        <img id="IMG_HOME" class="IMG_HOME m-auto row-span-7" src="./src/assets/imagens/sections/home/ilustracion1.png" alt="IMG_HOME">
+                        <p id="IMG_HOME_TEXT" class="IMG_HOME_TEXT text-center text-xl sm:text-2xl m-auto p-2 rounded-lg bg-[#ff6dce87]">Ideas y creaciones Sin Limites</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- SERVICES-SECTION -->
+            <div id="SERVICES_SECTION" class="SERVICES-SECTION w-full h-full hidden
+                grid grid-cols-1 grid-rows-[1fr_auto] sm:grid-cols-2 sm:grid-rows-1 gap-4">
+                <div class="relative">
+                    <h1 class="TITTLE text-3xl sm:text-4xl font-bold">SERVICIOS</h1>
+                    <br>
+                    <h2>Te ayudamos a plasmar tus ideas en proyectos únicos de arte digital.</h2>
+                    <br>
+                    <button id="NEXT_BUTTON_SERVICIES" class="p-2 rounded-lg" onclick="fadeOutIn()">siguiente</button>
+                    <br>
+                    <br>
+                    <div class="w-full sm:h-[450px]">
+                        <div id="CONTAINER_SERVICIE_SUMMMARY" class="opacity-100 transition-opacity duration-500 ease-in-out">
+                            <div class="flex gap-2">
+                                <h1 id="SUB_TITTLE" class="SUB_TITTLE text-xl sm:text-2xl">Arte Conceptual &
+                                    Visualización
+                                </h1>
+                                <i id="ICON_SUB_TITTLE" class="bi bi-palette-fill text-2xl"></i>
+                            </div>
+                            <br>
+                            <p id="SUMMARY">Creación de conceptos artísticos, bocetos con carácter y visualizaciones
+                                digitales que dan
+                                vida a
+                                ideas y marcas. Especializado en el desarrollo visual para proyectos de branding,
+                                videojuegos y
+                                experiencias interactivas, con un enfoque creativo que combina estilo, narrativa y
+                                funcionalidad. Cada propuesta está pensada para destacar, conectar con el público y
+                                dejar
+                                una
+                                impresión duradera</p>
+                            <br>
+                            <button class="sm:absolute bottom-0 p-2 rounded-lg">ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <img id="IMG_SERVICIE" class="w-full aspect-square object-cover     opacity-100 transition-opacity duration-500 ease-in-out"
+                        src="./src/assets/imagens/sections/images_servicies/ilustracion-creativa-artistica-dibujada-mano_98292-43548.png" alt="img-servicies">
+                </div>
+            </div>
+
+
+
+
+
+            <!-- ABOUT-SECTION -->
+            <div id="ABOUT_SECTION" class="ABOUT-SECTION w-full h-full hidden
+                grid grid-cols-1 grid-rows-[1fr_auto] sm:grid-cols-2 sm:grid-rows-1 gap-4">
+                <div>
+                    <h1 class="TITTLE text-3xl sm:text-4xl font-bold">Quienes Somos</h1>
+                    <br>
+                    <br class="hidden md:block">
+                    <br class="hidden md:block">
+                    <br class="hidden md:block">
+                    <h1 class="text-2xl">Una empreza enfocado al Arte</h1>
+                    <br>
+                    <div class="w-full h-auto">
+                        <div class="relative">
+                            <p>Creación de conceptos artísticos, bocetos con carácter y visualizaciones digitales que
+                                dan
+                                vida a
+                                ideas y marcas. Especializado en el desarrollo visual para proyectos de branding,
+                                videojuegos y
+                                experiencias interactivas, con un enfoque creativo que combina estilo, narrativa y
+                                funcionalidad. Cada propuesta está pensada para destacar, conectar con el público y
+                                dejar
+                                una
+                                impresión duradera</p>
+                            <br>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <i class="bi bi-wallet-fill text-xl"></i>
+                                    <h1 class="SUB_TITTLE text-xl">Mira nuestros trabajos</h1>
+                                </div>
+                                <br>
+                                <button class="p-2 rounded-lg">Ver</button>
+                                <br>
+                                <br>
+                                <a class="flex items-center gap-2" href="">
+                                    <i class="bi bi-envelope-fill text-xl"></i>
+                                    <h1 class="text-xl">ArteDigital@gmail.com</h1>
+                                </a>
+                                <br>
+                                <div class="flex gap-2 items-center">
+                                    <i class="bi bi-exclamation-circle-fill text-2xl"></i>
+                                    <a href=""><h1>Politica de Pribacidad</h1></a>
+                                    -
+                                    <a href=""><h1>Terminos y Condiciones</h1></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <img src="./src/assets/imagens/sections/about/about_img.png" alt="about-img">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- CONTACT_SECTION -->
+            <div id="CONTACT_SECTION" class="ABOUT-SECTION w-full h-full hidden">
+                <h1 class="TITTLE text-3xl sm:text-4xl font-bold">Contáctanos</h1>
+                <br>
+                <h1 class="text-2xl">¡Conectemos a través del arte digital!</h1>
+                <br>
+                <div class="w-full h-auto grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 gap-4">
+                    <div class="relative">
+                        <p>Si tienes alguna consulta sobre nuestras obras, proyectos personalizados o simplemente
+                            quieres hablar sobre el fascinante mundo del arte digital, ¡estamos aquí para escucharte! Ya
+                            sea que quieras encargar una pieza única o explorar más sobre nuestro proceso creativo, no
+                            dudes en escribirnos.
+                            <br>
+                            <br>
+                            Completa el formulario a continuación <i class="bi bi-highlighter"></i> y estaremos
+                            encantados de responder a todas tus
+                            preguntas. Cada mensaje es una nueva oportunidad para compartir la pasión por el arte y la
+                            creatividad.
+                        </p>
+                        <br>
+                        <div>
+                            <h2 class="SUB_TITTLE text-xl mb-2">Siguenos En Nuestras Redes Sociales</h2>
+                            <ul class="ICON-SOCIAL-NETWORKS flex gap-4">
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram text-2xl"></i></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook text-2xl"></i></a></li>
+                                <li><a href=""><i class="bi bi-tiktok text-2xl"></i></a></li>
+                            </ul>
+                            <div class="flex gap-2">
+                                <h2 class="SUB_TITTLE text-xl">Hubicanos en el Mapa</h2><i
+                                    class="bi bi-geo-alt-fill text-2xl"></i>
+                            </div>
+                            <br>
+                            <button class="p-2 rounded-lg">Mapa</button>
+                            <br>
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center">
+                        <div class="CONTACT-FORM
+                        w-[350px] max-h-[500px]  p-4 rounded-lg">
+                            <div class="CONTAC_INFO">
+                                <!-- <h1 class=" text-2xl"><span class="text-[#e74c3c] font-bold">Arte</span>Digital</h1> -->
+                                <img class="w-[50px] h-[40px] object-contain my-auto" src="./src/assets/imagens/sections/home/logo/ba7c3352960ba4112e10e7e9b4998c19.png" alt="logo">
+                            </div>
+                            <form id="contactForm" class="
+                            flex flex-col gap-8
+                            my-10">
+                                <input class="p-2" type="text" id="name" placeholder="Nombre y Apellido" required="">
+                                <input class="p-2" type="email" id="email" placeholder="Email" required="">
+                                <textarea class="p-2 resize-none" id="message" placeholder="Mensaje..."
+                                    required=""></textarea>
+                                <button class="BUTTON-SUBMIT
+                                w-[100px] h-[40px]
+                                rounded-lg" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER_MOBILE -->
+    <footer class="w-full p-2 flex flex-col items-center bg-[#1b1b1b] sm:hidden">
+        <br>
+        <img class="w-[50px] h-[40px] object-contain my-auto" src="./src/assets/imagens/sections/home/logo/ba7c3352960ba4112e10e7e9b4998c19.png" alt="logo">
+        <br>
+        <a href=""><h1>Politica de Pribacidad</h1></a>
+        <br>
+        <a href=""><h1>Terminos y Contidiones</h1></a>
+        <br>
+    </footer>
+
+
+
+
+
+    <!-- background -->
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- scripts local -->
+    <script src="./src/scripts/next-services.js"></script>
+    <script src="./src/scripts/menu-mobile.js"></script>
+    <script src="./src/scripts/animation-home.js"></script>
+    <script src="./src/scripts/nav-sections.js"></script>
+</body>
+
+</html>

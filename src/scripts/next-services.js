@@ -66,15 +66,19 @@ function fadeOutIn() {
 
     CONTAINER_SERVICIE_SUMMMARY.classList.add('opacity-0');
     IMG_SERVICIE.classList.add('opacity-0');
+
+    // se llama a la funcion de actualizar datos
+    setTimeout(() => {
+        nextServicies();
+    }, 500)
+
     // Después de 1 segundo, vuelve a opacidad 100 (fade in)
     setTimeout(() => {
-        nextServicies()
-        CONTAINER_SERVICIE_SUMMMARY.classList.remove('opacity-0');
-        CONTAINER_SERVICIE_SUMMMARY.classList.add('opacity-100');
-
         IMG_SERVICIE.classList.remove('opacity-0');
         IMG_SERVICIE.classList.add('opacity-100');
 
+        CONTAINER_SERVICIE_SUMMMARY.classList.remove('opacity-0');
+        CONTAINER_SERVICIE_SUMMMARY.classList.add('opacity-100');
         NEXT_BUTTON_SERVICIES.disabled = false;
     }, 1000); // 1000 ms = 1 segundo
 }

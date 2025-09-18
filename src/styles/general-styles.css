@@ -73,8 +73,9 @@ body {
 
 
 /* CONTAINER BACKGROUND */
-.CONTAINER-EXT {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+.CONTAINER-EXT,
+.MENU {
+    background-color: #1b1b1b;
     color: aliceblue;
 }
 
@@ -87,4 +88,8 @@ body {
 .CONTACT-FORM input,
 .CONTACT-FORM textarea {
     background-color: #2C2C2C;
+}
+#IMG_HOME_TEXT {
+    background-color: #2C2C2C;
+    color: aliceblue;
 }
